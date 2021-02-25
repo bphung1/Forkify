@@ -453,7 +453,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"45IGY":[function(require,module,exports) {
-require('./bundle-manifest').register(JSON.parse("{\"30Yg2\":\"index.250b04c7.js\",\"7v2qO\":\"icons.d4a14980.svg\"}"));
+require('./bundle-manifest').register(JSON.parse("{\"30Yg2\":\"index.HASH_REF_6315ebf922a29661e8263da0250b04c7.js\",\"7v2qO\":\"icons.HASH_REF_f6727c52d326b6f99dffa0b9d4a14980.svg\"}"));
 },{"./bundle-manifest":"3CXJ5"}],"3CXJ5":[function(require,module,exports) {
 "use strict";
 
@@ -518,6 +518,7 @@ const controlSearchResults = async function () {
 const init = function () {
   _viewsRecipeViewJsDefault.default.addHandlerRender(controlRecipes);
   _viewsSearchViewJsDefault.default.addHandlerSearch(controlSearchResults);
+  _viewsSearchViewJsDefault.default.clearInput();
 };
 init();
 
@@ -13254,4 +13255,4 @@ exports.default = new SearchView();
 
 },{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["3TOAk","45IGY","3miIZ"], "3miIZ", "parcelRequirefade")
 
-//# sourceMappingURL=index.250b04c7.js.map
+//# sourceMappingURL=index.HASH_REF_6315ebf922a29661e8263da0250b04c7.js.map
