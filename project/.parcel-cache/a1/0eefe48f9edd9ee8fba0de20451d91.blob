@@ -1,2 +1,0 @@
-// used to define important data
-const API_URL = 'https://forkify-api.herokuapp.com/api/v2/recipes';
