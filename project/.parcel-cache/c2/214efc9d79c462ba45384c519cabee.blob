@@ -453,7 +453,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"45IGY":[function(require,module,exports) {
-require('./bundle-manifest').register(JSON.parse("{\"30Yg2\":\"index.250b04c7.js\",\"7v2qO\":\"icons.d4a14980.svg\"}"));
+require('./bundle-manifest').register(JSON.parse("{\"30Yg2\":\"index.HASH_REF_6315ebf922a29661e8263da0250b04c7.js\",\"7v2qO\":\"icons.HASH_REF_f6727c52d326b6f99dffa0b9d4a14980.svg\"}"));
 },{"./bundle-manifest":"3CXJ5"}],"3CXJ5":[function(require,module,exports) {
 "use strict";
 
@@ -505,12 +505,12 @@ const controlRecipes = async function () {
     _viewsRecipeViewJsDefault.default.renderSpinner();
     // update result view to mark selecterd search result
     _viewsResultsViewJsDefault.default.update(_modelJs.getSearchResultsPage());
-    // updating bookmarks view
-    _viewsBookmarksViewJsDefault.default.update(_modelJs.state.bookmarks);
     // loading recipe
     await _modelJs.loadRecipe(id);
     // render recipe
     _viewsRecipeViewJsDefault.default.render(_modelJs.state.recipe);
+    // updating bookmarks view
+    _viewsBookmarksViewJsDefault.default.update(_modelJs.state.bookmarks);
   } catch (err) {
     _viewsRecipeViewJsDefault.default.renderError();
   }
@@ -723,9 +723,6 @@ const init = function () {
   if (storage) state.bookmarks = JSON.parse(storage);
 };
 init();
-const clearBookmarks = function () {
-  localStorage.clear('bookmarks');
-};
 
 },{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","regenerator-runtime":"62Qib","./config.js":"6pr2F","./helpers.js":"581KF"}],"62Qib":[function(require,module,exports) {
 /**
@@ -13559,4 +13556,4 @@ exports.default = new BookmarksView();
 
 },{"./View.js":"48jhP","url:../../img/icons.svg":"5usAu","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./previewView.js":"3QsRt"}]},["3TOAk","45IGY","3miIZ"], "3miIZ", "parcelRequirefade")
 
-//# sourceMappingURL=index.250b04c7.js.map
+//# sourceMappingURL=index.HASH_REF_6315ebf922a29661e8263da0250b04c7.js.map
